@@ -1,0 +1,33 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+'未完成 TODO
+
+partition 方法取（特殊堆） {
+    partition T01_Load_Class类的数据 {
+      "静态变量" --> "静态方法"
+      "静态方法" --> "常量池"
+    }
+    partition A类的数据 {
+      "静态变量 " --> "静态方法 "
+      "静态方法 " --> "常量池 "
+    }
+}
+
+partition 堆 #LightSkyBlue {
+  partition T01_Load_Class类的数据 {
+        "静态变量" --> "静态方法"
+        "静态方法" --> "常量池"
+      }
+      partition A类的数据 {
+        "静态变量 " --> "静态方法 "
+        "静态方法 " --> "常量池 "
+      }
+}
+
+partition 栈 #CCCCEE {
+  WavesArmes --> Introduction
+  --> "Play music"
+}
+
+@enduml
